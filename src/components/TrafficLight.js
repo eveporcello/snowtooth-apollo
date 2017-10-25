@@ -1,9 +1,4 @@
 import React from 'react'
-import { gql } from 'react-apollo'
-
-const mutation = gql`
-
-`
 
 export const TrafficLight = ({ lift }) => (
   <div id="traffic-light">

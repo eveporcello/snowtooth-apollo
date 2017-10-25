@@ -11,11 +11,13 @@ const LiftStatusTable = ({data}) => {
           <p>loading...</p> :
           <table>
             <thead>
+            <tr>
               <th>Lift Name</th>
               <th>Lift Status</th>
+              </tr>
             </thead>
             <tbody>
-              { data.allLifts.map((lift, i) => <LiftStatusRow lift={lift} /> )}
+              { data.allLifts.map((lift, i) => <LiftStatusRow key={i} lift={lift} /> )}
             </tbody>
           </table>
         }
